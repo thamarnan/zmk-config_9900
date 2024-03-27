@@ -35,7 +35,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <400>;
             bindings = <&kp W>, <&kp Q>;
-            };
+        };
     };
 
     behaviors {
@@ -44,7 +44,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <400>;
             bindings = <&kp E>, <&kp LS(R)>, <&kp NUMBER_4>;
-            };
+        };
     };
 
     behaviors {
@@ -53,7 +53,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <400>;
             bindings = <&kp R>, <&kp NUMBER_5>, <&kp LS(E)>;
-            };
+        };
     };
 
     behaviors {
@@ -62,7 +62,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <400>;
             bindings = <&kp T>, <&kp NUMBER_6>, <&kp LS(T)>;
-            };
+        };
     };
 
     behaviors {
@@ -71,7 +71,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <400>;
             bindings = <&kp Y>, <&kp NUMBER_7>, <&kp LS(NUMBER_6)>;
-            };
+        };
     };
 
     behaviors {
@@ -80,7 +80,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <400>;
             bindings = <&kp NUMBER_8>, <&kp U>;
-            };
+        };
     };
 
     behaviors {
@@ -89,7 +89,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <400>;
             bindings = <&kp I>, <&kp NUMBER_9>, <&kp LS(I)>;
-            };
+        };
     };
 
     behaviors {
@@ -98,7 +98,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <400>;
             bindings = <&kp O>, <&kp NUMBER_0>, <&kp Q>;
-            };
+        };
     };
 
     behaviors {
@@ -107,7 +107,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <400>;
             bindings = <&kp P>, <&kp MINUS>, <&kp LS(P)>;
-            };
+        };
     };
 
     behaviors {
@@ -116,8 +116,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <400>;
             bindings = <&kp LBKT>, <&kp EQUAL>, <&kp LS(LBKT)>;
-            };
-        
+        };
     };
 
     behaviors {
