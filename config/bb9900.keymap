@@ -258,6 +258,7 @@
         };
     };
 
+
 // ---------------------------------------------
 
     behaviors {
@@ -325,7 +326,7 @@
     &tdQ         &tdW       &tdE        &tdR       &tdT              &tdY          &tdU             &tdI            &tdO             &tdP
     &tdA         &tdS       &tdD        &tdF       &tdG              &tdH          &tdJ             &tdK            &tdL             &kp BSPC
     &kp LSHFT    &tdZ       &tdX        &tdC       &tdV              &tdB          &tdN             &tdM            &tdSP           &kp ENTER
-    &kp LCTRL               &kp LALT                                 &hm OUT_TOG SPACE              &tog SYM                         &tog UPPER
+    &kp LCTRL               &kp X                                 &hm OUT_TOG SPACE              &tog SYM                         &tog UPPER
             >;  
         };
 
