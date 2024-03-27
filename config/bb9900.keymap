@@ -28,7 +28,7 @@
             bindings = <&mkp LCLK>, <&bt BT_CLR>;
         };
     };
-
+// --------------------------------------------
     behaviors {
         tdQ: tap_dance_Q {
             compatible = "zmk,behavior-tap-dance";
@@ -107,6 +107,10 @@
             #binding-cells = <0>;
             tapping-term-ms = <400>;
             bindings = <&kp P>, <&kp MINUS>, <&kp LS(P)>;
+        };
+    };
+
+    behaviors {
         tdP: tap_dance_P {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -114,6 +118,83 @@
             bindings = <&kp LBKT>, <&kp EQUAL>, <&kp LS(LBKT)>;
         };
     };
+
+// ---------------------------------------------------------
+    behaviors {
+        tdA: tap_dance_A {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&kp A>, <&kp S>, <&kp LS(A)>;
+        };
+    };
+    behaviors {
+        tdS: tap_dance_S {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&kp D>, <&kp F>, <&kp LS(D)>;
+        };
+    };
+    behaviors {
+        tdD: tap_dance_D {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&kp G>, <&kp LS(F)>;
+        };
+    };
+    behaviors {
+        tdF: tap_dance_F {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&kp H>, <&kp LS(H)>;
+        };
+    };
+    behaviors {
+        tdG: tap_dance_G {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&kp J>, <&kp LS(J)>;
+        };
+    };
+    behaviors {
+        tdH: tap_dance_H {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&kp K>, <&kp LS(U)>;
+        };
+    };
+    behaviors {
+        tdJ: tap_dance_J {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&kp L>, <&kp LS(K)>;
+        };
+    };
+    behaviors {
+        tdK: tap_dance_K {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&kp SEMICOLON>, <&kp LS(L)>;
+        };
+    };
+    behaviors {
+        tdL: tap_dance_L {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&kp APOS>, <&kp LS(SEMICOLON)>;
+        };
+    };
+
+
+// ---------------------------------------------
 
     behaviors {
         hm: homerow_mods {
@@ -178,7 +259,7 @@
                  &msc SCRL_UP                                                                                       &msc SCRL_DOWN
     &bt BT_SEL 0            &bt BT_SEL 1                             &td0                           &bt BT_SEL 2                     &bt BT_SEL 3
     &tdQ         &tdW       &tdE        &tdR       &tdT              &tdY          &tdU             &tdI            &tdO             &tdP
-    &kp LEFT     &kp DOWN   &kp RIGHT   &none      &kp BSLH          &kp AMPS      &kp LBRC         &kp RBRC        &kp CARET        &kp BSPC
+    &tdA         &tdS       &tdD        &tdF       &tdG              &tdH          &tdJ             &tdK            &tdL             &kp BSPC
     &kp LSHFT    &none      &none       &none      &bl BL_DEC        &bl BL_TOG    &bl BL_INC       &tog THAI1           &bootloader      &kp ENTER
     &kp LCTRL               &kp LALT                                 &hm OUT_TOG SPACE              &tog SYM                         &tog UPPER
             >;  
