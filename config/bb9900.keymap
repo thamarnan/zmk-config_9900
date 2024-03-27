@@ -192,7 +192,71 @@
             bindings = <&kp APOS>, <&kp LS(SEMICOLON)>;
         };
     };
-
+// --------------------------------------------
+    behaviors {
+        tdZ: tap_dance_Z {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&kp Z>, <&kp LS(S)>;
+        };
+    };
+    behaviors {
+        tdX: tap_dance_X {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&kp C>, <&kp LS(G)>;
+        };
+    };
+    behaviors {
+        tdC: tap_dance_C {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&kp V>, <&kp LS(C)>;
+        };
+    };
+    behaviors {
+        tdV: tap_dance_V {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&kp B>, <&kp LS(V)>;
+        };
+    };
+    behaviors {
+        tdB: tap_dance_B {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&kp N>, <&kp LS(B)>;
+        };
+    };
+    behaviors {
+        tdN: tap_dance_N {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&kp M>, <&kp COMMA>, <&kp LS(N)>;
+        };
+    };
+    behaviors {
+        tdM: tap_dance_M {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&kp DOT>, <&kp LS(DOT)>, <&kp LS(COMMA)>;
+        };
+    };
+    behaviors {
+        tdSP: tap_dance_SP {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&kp RBKT>, <&kp SLASH>;
+        };
+    };
 
 // ---------------------------------------------
 
@@ -260,7 +324,7 @@
     &bt BT_SEL 0            &bt BT_SEL 1                             &td0                           &bt BT_SEL 2                     &bt BT_SEL 3
     &tdQ         &tdW       &tdE        &tdR       &tdT              &tdY          &tdU             &tdI            &tdO             &tdP
     &tdA         &tdS       &tdD        &tdF       &tdG              &tdH          &tdJ             &tdK            &tdL             &kp BSPC
-    &kp LSHFT    &none      &none       &none      &bl BL_DEC        &bl BL_TOG    &bl BL_INC       &tog THAI1           &bootloader      &kp ENTER
+    &kp LSHFT    &tdZ       &tdX        &tdC       &tdV              &tdB          &tdN             &tdM            &tdSP           &kp ENTER
     &kp LCTRL               &kp LALT                                 &hm OUT_TOG SPACE              &tog SYM                         &tog UPPER
             >;  
         };
