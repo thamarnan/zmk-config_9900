@@ -63,7 +63,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&kp NUMBER_8>, <&kp U>
+            bindings = <&kp NUMBER_8>, <&kp U>;
             };
         tdU: tap_dance_U {
             compatible = "zmk,behavior-tap-dance";
